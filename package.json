@@ -1,0 +1,8 @@
+{
+  "name": "espm",
+  "version": "0.0.1",
+  "bin":"./out/cli.js",
+  "scripts":{
+    "watch":"tsc -p src -w"
+  }
+}

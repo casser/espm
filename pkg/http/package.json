@@ -1,0 +1,19 @@
+{
+  "name"         : "http",
+  "version"      : "0.0.1",
+  "author"       : "Sergey Mamyan <sergey@mamble.co>",
+  "format"       : "esm",
+  "main"         : "index",
+  "directories"  : {
+    "vendor"     : "lib",
+    "source"     : "src",
+    "output"     : "out"
+  },
+  "dependencies" : {
+    "http"       : "github:vendor/project@version",
+    "text"       : "github:vendor/project@version"
+  },
+  "metadata"     : {
+    "text"       : "text"
+  }
+}
