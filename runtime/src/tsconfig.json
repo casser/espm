@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outFile":"../out/system.js",
+    "inlineSourceMap":true,
+    "inlineSources":true,
+    "noLib":true
+  },
+  "files":[
+    "../../typings/lib.es6.d.ts",
+    "../../typings/node.d.ts",
+    "./Path.ts",
+    "./Module.ts",
+    "./Loader.ts",
+    "./System.ts"
+  ]
+}
