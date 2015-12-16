@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration":true,
+    "module": "system",
+    "target": "es5",
+    "outDir":"../../out/runtime-test",
+    "inlineSourceMap":true,
+    "inlineSources":true,
+    "experimentalDecorators":true,
+    "noLib":true
+  },
+  "files":[
+    "../../tsd/lib.es6.d.ts",
+    "../../tsd/node.d.ts",
+    "./Main.ts",
+    "./One.ts",
+    "./Two.ts"
+  ]
+}

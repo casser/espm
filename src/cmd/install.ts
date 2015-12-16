@@ -3,30 +3,6 @@ import {Option} from './command';
 import {Cli} from "./command";
 
 @Command({
-    title  : 'Initialize Package',
-    usage  : [`
-    Usage :
-    |  espm init [options]
-    |
-    Examples :
-    |  espm init -n my-app
-    `]
-})
-export default class Init extends Cli {
-
-    @Option({
-        alias    : 'n',
-        args     : 'name',
-        title    : 'Save to package config ?'
-    })
-    name:string;
-
-    execute(...packages){
-        console.info(this.name,packages);
-    }
-}
-
-@Command({
     title  : 'Install Package',
     args   : '<package,...>',
     usage  : [`
@@ -38,7 +14,7 @@ export default class Init extends Cli {
     |  espm install npm:angular
     `]
 })
-export default class Install extends Cli {
+export class Install extends Cli {
 
     @Option({
         alias    : 's',

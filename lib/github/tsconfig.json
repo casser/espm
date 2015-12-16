@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "declaration":true,
+    "module": "system",
+    "target": "es5",
+    "outDir":"../../out/github",
+    "inlineSourceMap":true,
+    "inlineSources":true,
+    "experimentalDecorators":true,
+    "noLib":true
+  },
+  "files": [
+    "../../tsd/lib.es6.d.ts",
+    "../../tsd/node.d.ts",
+    "./client.ts",
+    "./index.ts"
+  ]
+}

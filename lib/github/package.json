@@ -1,0 +1,8 @@
+{
+  "name"    : "github",
+  "vendor"  : "ecmal",
+  "version" : "0.0.1",
+  "scripts" : {
+    "github" : "tsc -w -p ."
+  }
+}

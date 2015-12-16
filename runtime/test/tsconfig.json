@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "module": "system",
-    "target": "es5",
-    "outDir":"../out/test",
-    "inlineSourceMap":true,
-    "inlineSources":true
-  }
-}

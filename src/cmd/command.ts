@@ -25,7 +25,7 @@ export function Command(settings?):any{
                 .toLowerCase()
                 .replace(/\-(.*)/,'$1');
         }
-        settings.options = target[OPTIONS];
+        settings.options = target[OPTIONS]||{};
         delete target[OPTIONS];
 
         var parent = target.prototype.__proto__.constructor[COMMAND];
@@ -50,7 +50,7 @@ export class Cli {
 
     static help(){
         var meta = this[COMMAND];
-        var options = Object.keys(meta.options).map(option=>{
+        var options = Object.keys(meta.options).map((option:any)=>{
             option = meta.options[option];
             return `  -\033[1m${option.alias}\033[0m, --\033[1m${option.name}\033[0m : ${option.title}`;
         });
